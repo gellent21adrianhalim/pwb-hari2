@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Biodata</title>
+</head>
+<body>
+    <h1>Data Input</h1>
+    <form>
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required><br><br>
+
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="4" required></textarea><br><br>
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+        <label for="perempuan">Perempuan</label>
+        <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+        <label for="laki_laki">Laki-laki</label><br><br>
+
+        <label for="agama">Agama:</label>
+        <select id="agama" name="agama" required>
+            <option value="Islam">Islam</option>
+            <option value="Protestan">Protestan</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Budha">Budha</option>
+            <option value="Hindu">Hindu</option>
+        </select><br><br>
+
+        <label for="status">Status:</label>
+        <input type="radio" id="single" name="status" value="Single" required>
+        <label for="single">Single</label>
+        <input type="radio" id="married" name="status" value="Married" required>
+        <label for="married">Married</label>
+        <input type="radio" id="relationship" name="status" value="Relationship" required>
+        <label for="relationship">Relationship</label>
+        <input type="radio" id="complicated" name="status" value="Complicated" required>
+        <label for="complicated">Complicated</label><br><br>
+
+        <input type="submit" value="Save">
+        <input type="button" value="Edit">
+        <input type="button" value="Delete">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
